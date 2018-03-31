@@ -67,7 +67,7 @@ client.on('message', message => {
     if (message.member.voiceChannel) {       
         message.member.voiceChannel.join()
         .then(connection => {
-        connection.playStream("http://radio2m.scdn.arkena.com/live.mp3"); //for playing an audiostream/radio
+        connection.playStream("http://20043.live.streamtheworld.com/SKYRADIO.mp3"); //for playing an audiostream/radio
         })
         .catch(console.log);
         message.reply('Joined and started playing.');
