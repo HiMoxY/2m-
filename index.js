@@ -47,7 +47,7 @@ if (message.content === '$help') {
 });
 client.on('message', message => {
   if(message.content === ('clear')) {
-  let modRole = message.guild.roles.find("@HiMoxY#1027 ", "Admin");
+  let modRole = message.guild.roles.find("name ", "Admin");
   if (!modRole) return message.reply('You do not have Admin Role'); {
     }
   const params = message.content.split(" ").slice(1)
@@ -91,7 +91,7 @@ client.on("message", message => {
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
+   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **you dont have permission**');
         var msg;
         msg = parseInt();
       
@@ -116,7 +116,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '$suppport') {
-    msg.reply('السيرفر للمساعده,https://discord.gg/GEBzaCh');
+    msg.reply('السيرفر للمساعده,https://discord.gg/PDVcpBj');
   }
 });
 client.on("message", message => {
