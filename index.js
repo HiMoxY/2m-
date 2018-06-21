@@ -135,11 +135,11 @@ client.on("message", message => {
 .setDescription("معلومات عن الحــساب")
                .setFooter(`Name Bot.`, '')
   .setColor("#9B59B6")
-  .addField("اســـم الحســاب", `${message.author.username}`)
-  .addField('كود الحساب الخاص', message.author.discriminator)
-  .addField("الرقـــم الشـــخصي", message.author.id)
-  .addField('بــــوت', message.author.bot)
-  .addField("تاريخ التسجيل", message.author.createdAt)
+  .addField("account name", `${message.author.username}`)
+  .addField('account code', message.author.discriminator)
+  .addField("ID", message.author.id)
+  .addField('Bots', message.author.bot)
+  .addField("date of registration", message.author.createdAt)
      
      
   message.channel.sendEmbed(embed);
