@@ -21,24 +21,24 @@ client.on('message', msg => {
 });
 if (message.content === '$help') {
               var embed  = new Discord.RichEmbed()
-                .addField("**LINKS**" ,":no_entry_sign: Added blocking links :no_entry_sign: ")
+                .addField("**LINKS**" ,":no_entry_sign: تم اضافه منع الروابط :no_entry_sign: ")
                 .addField("broadcast (bc)" ,"**الاستخدام:** ``$broadcast <الرساله> , $bc <الرساله>``")
                 .addField("**BAN**" ,"**الاستخدام:** ``$ban <المستخدم>``")
-                .addField("**KICK**" ,"**user:** ``$kick <user> ``")
-                .addField("**ِAVATAR**" ,"**user:** ``$avatar``")
-                .addField("**INFO**", "**user :** ``$info``")
-                .addField("**SAY**" ,"**user:** ``$say <mssg>``")
+                .addField("**KICK**" ,"**الاستخدام:** ``$kick <المستخدم> ``")
+                .addField("**ِAVATAR**" ,"**الاستخدام:** ``$avatar``")
+                .addField("**INFO**", "**الأستخدام :** ``$info``")
+                .addField("**SAY**" ,"**الاستخدام:** ``$say <الرساله>``")
                 .addField("**ID**" ,"**ال��ستخدام:** ``$id``")
-                .addField("**SERVER**" ,"**user:** ``$server``")
-                .addField("**INVITE**" ,"**user:** ``$invite <لto invite bots>``")
-                .addField("**SUPPORT**" ,"**user:** ``$suppport <server support>``")
-                .addField("**QA**" ,"**user:** ``$qa <السؤال>``  ")
-                .addField("**CLEAR**" ,"**user:** ``$clear <العدد>``")
-                .addField("**PING**", "**user:** ``$ping``")
-                .addField("**SERVERNAME**", "**user:** ``$servername``")
-                .addField("**CUT_TWEET**", "**user** ``$ct``")
-                .addField("**TWEET**", "**اuser** ``$tweet <الرساله>``")
-                .addField("**NO INVITE LINKE**","Added the block blocking feature")
+                .addField("**SERVER**" ,"**الاستخدام:** ``$server``")
+                .addField("**INVITE**" ,"**الاستخدام:** ``$invite <لأضافه البوت لأى سيرفر>``")
+                .addField("**SUPPORT**" ,"**الاستخدام:** ``$suppport <سيرفر دعم الفنى>``")
+                .addField("**QA**" ,"**الاستخدام:** ``$qa <السؤال>``  ")
+                .addField("**CLEAR**" ,"**الاستخدام:** ``$clear <العدد>``")
+                .addField("**PING**", "**الأستخدام:** ``$ping``")
+                .addField("**SERVERNAME**", "**الأستخدام:** ``$servername``")
+                .addField("**CUT_TWEET**", "**الاستخدام** ``$ct``")
+                .addField("**TWEET**", "**الاستخدام** ``$tweet <الرساله>``")
+                .addField("**NO INVITE LINKE**","تم اضافة خاصية منع الانفيتات ")
                 .addField("**LOGIN**" , " تم اضافة خاصية التفعيل لطلب تشغيلها في السيرفر كلم المبيرمجين ")
                 .setColor('RANDOM')
 .setColor('RANDOM')
@@ -47,7 +47,7 @@ if (message.content === '$help') {
 });
 client.on('message', message => {
   if(message.content === ('clear')) {
-  let modRole = message.guild.roles.find("name ", "Admin");
+  let modRole = message.guild.roles.find("name", "Admin");
   if (!modRole) return message.reply('You do not have Admin Role'); {
     }
   const params = message.content.split(" ").slice(1)
@@ -83,7 +83,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '$help') {
-    msg.reply(':envelope: | Message sent in private');
+    msg.reply(':envelope: | تم ارسال الرساله في الخاص');
   }
 });
 client.on("message", message => {
@@ -91,7 +91,7 @@ client.on("message", message => {
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **you dont have permission**');
+   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
         var msg;
         msg = parseInt();
       
@@ -99,9 +99,9 @@ client.on("message", message => {
       message.channel.sendMessage("", {embed: {
         title: "Done | تــم",
         color: 0x06DF00,
-        description: "Messages successfully cleared",
+        description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "HiMo🎤."
+          text: "Name Bot."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -116,14 +116,14 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '$suppport') {
-    msg.reply('السيرفر للمساعده,https://discord.gg/PDVcpBj');
+    msg.reply('السيرفر للمساعده,https://discord.gg/GEBzaCh');
   }
 });
 client.on("message", message => {
       if (message.content === "$ping") {
       const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
-  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + 'ms')
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
   message.channel.sendEmbed(embed);
     }
 });
@@ -133,13 +133,13 @@ client.on("message", message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("معلومات عن الحــساب")
-               .setFooter(`HiMo🎤.`, '')
+               .setFooter(`Name Bot.`, '')
   .setColor("#9B59B6")
-  .addField("account name", `${message.author.username}`)
-  .addField('account code', message.author.discriminator)
-  .addField("ID", message.author.id)
-  .addField('Bots', message.author.bot)
-  .addField("date of registration", message.author.createdAt)
+  .addField("اســـم الحســاب", `${message.author.username}`)
+  .addField('كود الحساب الخاص', message.author.discriminator)
+  .addField("الرقـــم الشـــخصي", message.author.id)
+  .addField('بــــوت', message.author.bot)
+  .addField("تاريخ التسجيل", message.author.createdAt)
      
      
   message.channel.sendEmbed(embed);
@@ -184,4 +184,3 @@ client.on("message", (message) => {
     }
 });
 client.login(process.env.TOKEN);
-
