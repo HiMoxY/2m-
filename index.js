@@ -101,7 +101,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "Name Bot."
+          text: "HiMo🎤."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
