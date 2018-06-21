@@ -83,7 +83,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '$help') {
-    msg.reply(':envelope: | تم ارسال الرساله في الخاص');
+    msg.reply(':envelope: | Message sent in private');
   }
 });
 client.on("message", message => {
@@ -99,7 +99,7 @@ client.on("message", message => {
       message.channel.sendMessage("", {embed: {
         title: "Done | تــم",
         color: 0x06DF00,
-        description: "تم مسح الرسائل بنجاح",
+        description: "Messages successfully cleared",
         footer: {
           text: "HiMo🎤."
         }
@@ -123,7 +123,7 @@ client.on("message", message => {
       if (message.content === "$ping") {
       const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
-  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + 'ms')
   message.channel.sendEmbed(embed);
     }
 });
@@ -133,7 +133,7 @@ client.on("message", message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("معلومات عن الحــساب")
-               .setFooter(`Name Bot.`, '')
+               .setFooter(`HiMo🎤.`, '')
   .setColor("#9B59B6")
   .addField("account name", `${message.author.username}`)
   .addField('account code', message.author.discriminator)
