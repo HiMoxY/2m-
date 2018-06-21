@@ -78,7 +78,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '$invite') {
-    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=414087773830512640&response_type=code');
+    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=445626711313219594');
   }
 });
 client.on('message', msg => {
