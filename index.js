@@ -83,7 +83,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '$help') {
-    msg.reply(':envelope: | Message sent in public');
+    msg.reply(':envelope: | Message sent in private');
   }
 });
 client.on("message", message => {
