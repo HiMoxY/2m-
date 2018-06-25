@@ -101,7 +101,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "Messages successfully cleared",
         footer: {
-          text: "HiMo🎤."
+          text: "Mommy📻."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -133,7 +133,7 @@ client.on("message", message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("Account information")
-               .setFooter(`HiMo🎤.`, '')
+               .setFooter(`Mommy📻.`, '')
   .setColor("#9B59B6")
   .addField("account name", `${message.author.username}`)
   .addField('account code', message.author.discriminator)
