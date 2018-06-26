@@ -32,7 +32,7 @@ if (message.content === '$help') {
                 .addField("**SERVER**" ,"**user:** ``$server``")
                 .addField("**INVITE**" ,"**user:** ``$invite <invite bots>``")
                 .addField("**SUPPORT**" ,"**user:** ``$suppport <server support>``")
-                .addField("**QA**" ,"**user:** ``$qa <السؤال>``  ")
+                .addField("**QA**" ,"**user:** ``-qa <السؤال>``  ")
                 .addField("**CLEAR**" ,"**user:** ``$clear <العدد>``")
                 .addField("**PING**", "**user:** ``$ping``")
                 .addField("**SERVERNAME**", "**user:** ``$servername``")
@@ -78,7 +78,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '$invite') {
-    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=445626711313219594');
+    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=460911160045338624');
   }
 });
 client.on('message', msg => {
@@ -91,7 +91,7 @@ client.on("message", message => {
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
+   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | ** you dont have permission**');
         var msg;
         msg = parseInt();
       
