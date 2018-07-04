@@ -1581,4 +1581,4 @@ client.on('message', function(message) {
 
 
 
-client.login("NDYzMzY2MzMyMTEzNDg1ODI1.DhvXCg.oix7QwDhjg4H1Ai_j6cCS30v53Y");
+client.login("");
