@@ -263,7 +263,7 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© HiMoxY™ Bot All rights reserved')  
-      .addField('Server Technical Support', ` join server discord HiMoxY™ support : https://discord.gg/3HPnCCt  `)
+      .addField('Server Technical Support', ` join server discord HiMoxY™ support : https://discord.gg/sgexBXv  `)
   message.author.send({embed});
 
  }
