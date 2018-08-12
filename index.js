@@ -141,11 +141,11 @@ message.channel.sendEmbed(embed)
 client.on("message", message => {
  if (message.content === "-invite") {
   const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
+      .setColor("#ff8f01")
       .setFooter(" HiMoxY™")
       .setTimestamp()
       .setFooter('© HiMoxY™ Bot All rights reserved')
-      .addField('Thank you for using Premium Bot📌', `https://discordapp.com/oauth2/authorize/?permissions=805314622&scope=bot&client_id=473266278379814913`)
+      .addField('Thank you for using Premium Bot📌', `https://discordapp.com/oauth2/authorize/?permissions=805314622&scope=bot&client_id=455505297520328724`)
   message.channel.send({embed});
 
  }
@@ -187,7 +187,7 @@ client.on("message", message => {
 client.on("message", message => {
  if (message.content === "-support") {
   const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
+      .setColor("#0070ff")
       .setFooter(" HiMoxY™")
       .setTimestamp()
       .setFooter('© HiMoxY™ Bot All rights reserved')  
@@ -251,7 +251,7 @@ client.on('message', message => {
      if (message.content === "-srv") {
 		 if(!message.channel.guild) return;
      let embed = new Discord.RichEmbed()
-  .setColor("RANDOM")
+  .setColor("#56ca37")
   .addField("**Servers: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
@@ -269,7 +269,7 @@ client.on('message', message => {
      if (message.content === "-ping") {
       const embed = new Discord.RichEmbed()
  
-  .setColor("#FF0000")
+  .setColor("#ebff00")
   .addField('``The speed of the bot connection`` ' , `${Date.now() - message.createdTimestamp}` + 'ms`')
                  .setFooter(` HiMoxY™.`, 'https://e.top4top.net/p_8913asvp1.jpg')
                  .setTimestamp()
@@ -293,7 +293,7 @@ client.on('message', message => {
 		if(!message.channel.guild) return;
         var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
         const embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
+        .setColor('#00ff47')
 	.setFooter(" HiMoxY™")
         .setTimestamp()
         .addField('Roles:',`**[${roles}]**`)
@@ -655,7 +655,7 @@ client.on("message", message => {
           heg = message.author
       }
   var avatar = new Discord.RichEmbed()
-.setColor('RANDOM')
+.setColor('#00fcff')
 .setFooter(" Tinder™")
 .setTimestamp()
 .setTitle(heg.username)
@@ -682,7 +682,7 @@ client.on('message', msg => {
 
 if (command == "by") {
     let embed = new Discord.RichEmbed()
-    .setColor('RANDOM')
+    .setColor('#9800ff')
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .setDescription(args.join(" "))
     .setFooter(" Tinder™ ")
@@ -1932,7 +1932,7 @@ client.on('message', message => {
                    bot = 'User'
                }
   var EsTeKnAN = new Discord.RichEmbed()
-  .setColor('#be17ec')
+  .setColor('#f200ff')
   .setThumbnail(`${mentionavatar.avatarURL}`)
   .addField("***HiMoxYTM is now streaming!***" ,mentionavatar.username )
   .setDescription('***himoxytm has just gone live! Watch their stream here***:https://www.twitch.tv/himoxytm')
@@ -1958,7 +1958,7 @@ client.on('message',message =>{
    
   });
   var embed = new Discord.RichEmbed()
-  .setColor("#000000")
+  .setColor("#01c6ff")
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
   .setThumbnail("https://a.top4top.net/p_9504qwbq1.png")
            message.channel.send({ embed: embed });
